@@ -81,6 +81,9 @@ while running:
         if pygame.sprite.collide_rect(sprite1, sprite2):
             won = True
 
+        if pygame.sprite.collide_rect(sprite2, sprite1):
+            all_sprites.remove(sprite2)  # Remove sprite2 from the group to stop drawing it
+
     # 4. Drawing and Rendering
     screen.blit(bg_image, (0, 0))
     all_sprites.draw(screen)
