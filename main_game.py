@@ -25,7 +25,7 @@ while not done:
     screen.fill((0, 0, 0)) 
 
     pygame.draw.rect(screen, current_color, (50, 50, 100, 100))
-
+    pygame.draw.circle(screen, current_color, (250, 100), 50)
 
     pygame.display.flip()
 
